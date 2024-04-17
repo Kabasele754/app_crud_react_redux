@@ -1,4 +1,23 @@
-export const ProductDetail = ({ isOpen, onClose }) => {
+import { useEffect, useState } from "react";
+import ProductService from "../../services/ProductServices";
+
+export const ProductDetail = ({ isOpen, onClose,productId }) => {
+
+const [productDetails, setProductDetails] = useState(null);
+
+useEffect(() => {
+    if (isOpen && productId) {
+        const getProductDetails = async () => {
+            try {
+                const productDetails = await ProductService.getProductById(productId);
+                setProductDetails(productDetails);
+            } catch (error) {
+                console.error('Error fetching product details:', error);
+            }
+        };
+        getProductDetails();
+    }
+}, [isOpen, productId]);
         return (
             <div>
                 {isOpen && (
@@ -10,7 +29,15 @@ export const ProductDetail = ({ isOpen, onClose }) => {
                                     <button type="button" className="btn-close" onClick={onClose} aria-label="Close"></button>
                                 </div>
                                 <div className="modal-body">
-                                    {/* Contenu du détail du produit */}
+                                {productDetails ? (
+    <div>
+        <p><strong>Name:</strong> {productDetails.name}</p>
+        <p><strong>Price:</strong> {productDetails.price}</p>
+        {/* Ajoutez d'autres détails du produit ici */}
+    </div>
+) : (
+    <p>Loading product details...</p>
+)}
                                 </div>
                             </div>
                         </div>

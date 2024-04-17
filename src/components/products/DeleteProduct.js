@@ -1,4 +1,17 @@
-export const DeleteProduct = ({ isOpen, onClose }) => {
+import ProductService from "../../services/ProductServices";
+
+export const DeleteProduct = ({ isOpen, onClose, productId, fetchData }) => {
+
+        const handleDelete = async () => {
+                try {
+                  await ProductService.deleteProduct(productId);
+                  onClose(); // Fermer le modal après la suppression
+                  fetchData();
+                } catch (error) {
+                  console.error('Error deleting product:', error);
+                }
+                
+              };
         return (
             <div>
                 {isOpen && (
@@ -14,7 +27,7 @@ export const DeleteProduct = ({ isOpen, onClose }) => {
                                 </div>
                                 <div className="modal-footer">
                                     <button type="button" className="btn btn-secondary" onClick={onClose}>Cancel</button>
-                                    <button type="button" className="btn btn-danger">Delete</button>
+                                    <button type="button" className="btn btn-danger" onClick={handleDelete}>Delete</button>
                                 </div>
                             </div>
                         </div>

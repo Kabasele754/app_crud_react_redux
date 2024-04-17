@@ -6,9 +6,12 @@ import { ProductList } from './components/products/ProductList';
 import { AddProduct } from './components/products/AddProduct';
 import { EditProduct } from './components/products/EditProduct';
 import { Nav } from './components/pages/Nav';
+import { Provider } from 'react-redux';
+import Store from './redux/store';
 
 function App() {
   return (
+    <Provider store={Store}>
     <div className="App">
       <BrowserRouter>
         <div className='header'>
@@ -28,6 +31,7 @@ function App() {
       <ToastContainer className="toast-position"
         position="bottom-right"></ToastContainer>
     </div>
+    </Provider>
     
   );
 }
