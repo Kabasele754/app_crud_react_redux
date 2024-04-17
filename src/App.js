@@ -14,16 +14,21 @@ function App() {
         <div className='header'>
         <Nav></Nav>
         </div>
+        <div className='container'>
+
+      
         <Routes>
           <Route path='/' element={<Home></Home>}></Route>
           <Route path='/product' element={<ProductList></ProductList>}></Route>
           <Route path='/product/add' element={<AddProduct></AddProduct>}></Route>
           <Route path='/product/edit/:code' element={<EditProduct></EditProduct>}></Route>
         </Routes>
+        </div>
       </BrowserRouter>
       <ToastContainer className="toast-position"
         position="bottom-right"></ToastContainer>
     </div>
+    
   );
 }
 
