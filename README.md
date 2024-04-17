@@ -1,71 +1,82 @@
-# Getting Started with Create React App
+### Visualisation 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Screenshot 2024-04-17 at 8.05.25 in the evening.png](public%2Fassets%2FScreenshot%202024-04-17%20at%208.05.25%20in%20the%20evening.png)
 
-## Available Scripts
+![Screenshot 2024-04-17 at 8.05.54 in the evening.png](public%2Fassets%2FScreenshot%202024-04-17%20at%208.05.54%20in%20the%20evening.png)
 
-In the project directory, you can run:
+![Screenshot 2024-04-17 at 8.06.12 in the evening.png](public%2Fassets%2FScreenshot%202024-04-17%20at%208.06.12%20in%20the%20evening.png)
 
-### `npm start`
+### Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Clonez ce dépôt sur votre machine locale en utilisant la commande suivante :
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```bash
+git clone https://github.com/Kabasele754/app_crud_react_redux.git
+```
 
-### `npm test`
+2. Accédez au répertoire du projet :
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+cd app_crud_react_redux
+```
 
-### `npm run build`
+3. Installez les dépendances en utilisant npm :
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+npm install
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Démarrage de l'application
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Pour démarrer l'application en mode développement, utilisez la commande suivante :
 
-### `npm run eject`
+```bash
+npm start
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Cela ouvrira l'application dans votre navigateur par défaut à l'adresse [http://localhost:3000](http://localhost:3000).
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Exécution des tests
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Pour lancer les tests unitaires, utilisez la commande suivante :
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+npm test
+```
 
-## Learn More
+### Construction de l'application
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Pour créer une version optimisée de l'application pour la production, utilisez la commande suivante :
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+npm run build
+```
 
-### Code Splitting
+Cela générera les fichiers optimisés dans le répertoire `build` prêts à être déployés.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Explication
 
-### Analyzing the Bundle Size
+Ce projet est un exemple d'application CRUD (Create, Read, Update, Delete) utilisant React et Redux pour la gestion de l'état global de l'application. Il utilise également JSON Server pour simuler une API REST pour les opérations CRUD sur une base de données JSON locale.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Fonctionnalités
 
-### Making a Progressive Web App
+- Ajout de produits
+- Affichage de la liste des produits
+- Modification des produits existants
+- Suppression de produits
+- Pagination pour la liste des produits
+- Recherche de produits
+- Affichage de détails de produit
+- Gestion des images pour les produits
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Pour plus d'informations sur la création d'une application React avec Create React App, consultez la [documentation de Create React App](https://create-react-app.dev/docs/getting-started/).
 
-### Advanced Configuration
+Pour en savoir plus sur React et Redux, consultez la [documentation React](https://reactjs.org/docs/getting-started.html) et la [documentation Redux](https://redux.js.org/introduction/getting-started).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Pour des informations sur le déploiement d'une application React, consultez la [documentation de déploiement de Create React App](https://create-react-app.dev/docs/deployment).
 
-### Deployment
+### Problèmes courants
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- **La construction (`npm run build`) échoue lors de la minification** : Consultez la [documentation de dépannage de Create React App](https://create-react-app.dev/docs/troubleshooting#npm-run-build-fails-to-minify) pour résoudre les problèmes courants liés à la construction de l'application.
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# app_crud_react_redux
+Cette application est un exemple de base que vous pouvez personnaliser et étendre en fonction de vos besoins spécifiques.
