@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import ProductService from "../../services/ProductServices";
 
 export const AddProduct = ({ isOpen, onClose, fetchData }) => {
@@ -60,7 +60,7 @@ export const AddProduct = ({ isOpen, onClose, fetchData }) => {
                   aria-label="Close"
                 ></button>
               </div>
-              <div className="modal-body">
+              <div className="modal-body" style={{ textAlign: 'left' }}>
                 <form onSubmit={handleSubmit}>
                   <div className="mb-3">
                     <label htmlFor="productName" className="form-label">
@@ -87,8 +87,8 @@ export const AddProduct = ({ isOpen, onClose, fetchData }) => {
                     />
                   </div>
                   {error && <div className="alert alert-danger">{error}</div>}
-                  <button type="submit" className="btn btn-primary">
-                    Save
+                  <button type="submit" className="btn btn-primary col-12">
+                    Add product
                   </button>
                 </form>
               </div>

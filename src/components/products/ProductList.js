@@ -8,7 +8,6 @@ import { faEdit, faTrashAlt, faEye, faAdd } from '@fortawesome/free-solid-svg-ic
 import { connect } from "react-redux";
 import { fetchProducts } from "../../redux/actions/product/fetchProductAction";
 import ProductService from "../../services/ProductServices";
-import { useNavigation } from "react-router-dom";
 
 
 export const ProductList = () => {
@@ -120,7 +119,7 @@ const closeDetailModal = () => {
                                 </tr>
                             </thead>
                             <tbody>
-                                {products && products.map(product => (
+                                {products && products.slice().reverse().map(product => (
                                     <tr key={product.id}>
                                         <th scope="row">{product.id}</th>
                                         <td>{product.name}</td>

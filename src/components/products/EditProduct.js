@@ -59,7 +59,7 @@ export const EditProduct = ({ isOpen, onClose, productId, fetchData }) => {
                       <h1 className="modal-title fs-5">Modifier le produit</h1>
                       <button type="button" className="btn-close" onClick={onClose} aria-label="Fermer"></button>
                     </div>
-                    <div className="modal-body">
+                    <div className="modal-body" style={{ textAlign: 'left' }}>
                       <form onSubmit={handleSubmit}>
                         <div className="mb-3">
                           <label htmlFor="productName" className="form-label">Nom du produit</label>
@@ -70,7 +70,7 @@ export const EditProduct = ({ isOpen, onClose, productId, fetchData }) => {
                           <input type="text" className="form-control" id="productPrice" value={productPrice} onChange={handleProductPriceChange} />
                         </div>
                         {error && <div className="alert alert-danger">{error}</div>}
-                        <button type="submit" className="btn btn-primary">Enregistrer</button>
+                        <button type="submit" className="btn btn-primary col-12">Update</button>
                       </form>
                     </div>
                   </div>

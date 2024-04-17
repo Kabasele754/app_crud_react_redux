@@ -28,7 +28,7 @@ useEffect(() => {
                                     <h1 className="modal-title fs-5" id="exampleModalLabel">Product Detail</h1>
                                     <button type="button" className="btn-close" onClick={onClose} aria-label="Close"></button>
                                 </div>
-                                <div className="modal-body">
+                                <div className="modal-body" style={{ textAlign: 'left' }}>
                                 {productDetails ? (
     <div>
         <p><strong>Name:</strong> {productDetails.name}</p>

@@ -2,7 +2,7 @@
   "products": [
     {
       "name": "Produit 1",
-      "price": "1000",
+      "price": "109",
       "id": "1"
     },
     {
@@ -14,6 +14,11 @@
       "id": "3",
       "name": "Produit 3",
       "price": 30
+    },
+    {
+      "id": "76a3",
+      "name": "Bonjout",
+      "price": "44"
     },
     {
       "id": "720a",
@@ -46,9 +51,9 @@
       "price": "34"
     },
     {
+      "id": "4240",
       "name": "test6",
-      "price": "3522",
-      "id": "4240"
+      "price": "35"
     },
     {
       "id": "c5fd",
@@ -79,6 +84,16 @@
       "id": "45ac",
       "name": "test12",
       "price": "554"
+    },
+    {
+      "id": "2457",
+      "name": "test 13",
+      "price": "123"
+    },
+    {
+      "id": "69db",
+      "name": "remdkke",
+      "price": "883"
     }
   ]
 }
