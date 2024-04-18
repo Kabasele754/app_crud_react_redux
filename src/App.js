@@ -9,32 +9,36 @@ import { Nav } from './components/pages/Nav';
 import { Provider } from 'react-redux';
 import Store from './redux/store';
 import ContactForm from './components/pages/ContactForm';
+import CarteIdentite from './components/pages/CarteIdentite';
+import { DndProvider } from 'react-dnd';
+import { HTML5Backend } from 'react-dnd-html5-backend';
+
+
 
 function App() {
   return (
     <Provider store={Store}>
-    <div className="App">
-      <BrowserRouter>
-        <div className='header'>
-        <Nav></Nav>
+      <DndProvider backend={HTML5Backend}>
+        <div className="App">
+          <BrowserRouter>
+            <div className='header'>
+              <Nav></Nav>
+            </div>
+            <div className='container'>
+              <Routes>
+                <Route path='/' element={<Home></Home>}></Route>
+                <Route path='/product/' element={<ProductList></ProductList>}></Route>
+                <Route path='/product/add' element={<AddProduct></AddProduct>}></Route>
+                <Route path='/product/edit/:code' element={<EditProduct></EditProduct>}></Route>
+                <Route path='/contact/' element={<ContactForm></ContactForm>}></Route>
+                <Route path='/cart/' element={<CarteIdentite></CarteIdentite>}></Route>
+              </Routes>
+            </div>
+          </BrowserRouter>
+          <ToastContainer className="toast-position" position="bottom-right"></ToastContainer>
         </div>
-        <div className='container'>
-
-      
-        <Routes>
-          <Route path='/' element={<Home></Home>}></Route>
-          <Route path='/product/' element={<ProductList></ProductList>}></Route>
-          <Route path='/product/add' element={<AddProduct></AddProduct>}></Route>
-          <Route path='/product/edit/:code' element={<EditProduct></EditProduct>}></Route>
-          <Route path='/contact/' element={<ContactForm></ContactForm>}></Route>
-        </Routes>
-        </div>
-      </BrowserRouter>
-      <ToastContainer className="toast-position"
-        position="bottom-right"></ToastContainer>
-    </div>
+      </DndProvider>
     </Provider>
-    
   );
 }
 

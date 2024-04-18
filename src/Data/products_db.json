@@ -56,19 +56,14 @@
       "price": "35"
     },
     {
-      "id": "c5fd",
       "name": "test 7",
-      "price": "35"
+      "price": "3500",
+      "id": "c5fd"
     },
     {
       "id": "cd2c",
       "name": "test 8",
       "price": "27"
-    },
-    {
-      "id": "85ed",
-      "name": "test 9",
-      "price": "45"
     },
     {
       "id": "2bf5",
@@ -141,6 +136,14 @@
       "phone": "0977977427",
       "email": "pepexykabasele@gmail.com",
       "comment": "kmdfkjgnjndhbfdhbhbfhbhdbjbfjfhd"
+    },
+    {
+      "id": "cf3b",
+      "firstName": "trustme",
+      "lastName": "joijio",
+      "phone": "0977977427",
+      "email": "admin@gmail.com",
+      "comment": "mkkjnjbjhbjb"
     }
   ]
 }

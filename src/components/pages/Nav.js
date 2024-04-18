@@ -19,7 +19,7 @@ export const Nav = () => {
                       </li>
                       
                       <li className="nav-item">
-                        <Link className="nav-link" >Aricles</Link>
+                        <Link className="nav-link" to={'/cart'} >Genete cart</Link>
                       </li>
 
                       <li className="nav-item">
