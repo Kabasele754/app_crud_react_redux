@@ -30,7 +30,7 @@ export const Home = () => {
   // Calcule l'index de début et de fin des produits à afficher sur la page actuelle
   const indexOfLastProduct = currentPage * productsPerPage;
   const indexOfFirstProduct = indexOfLastProduct - productsPerPage;
-  const currentProducts = products.slice(indexOfFirstProduct, indexOfLastProduct);
+  const currentProducts = products.slice(indexOfFirstProduct, indexOfLastProduct)
 
   // Change la page
   const paginate = pageNumber => setCurrentPage(pageNumber);

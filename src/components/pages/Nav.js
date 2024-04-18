@@ -23,7 +23,7 @@ export const Nav = () => {
                       </li>
 
                       <li className="nav-item">
-                        <Link className="nav-link" >Contact</Link>
+                        <Link className="nav-link"  to={'/contact'} >Contact</Link>
                       </li>
                     </ul>
                     <form className="d-flex" role="search">

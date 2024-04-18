@@ -8,6 +8,7 @@ import { EditProduct } from './components/products/EditProduct';
 import { Nav } from './components/pages/Nav';
 import { Provider } from 'react-redux';
 import Store from './redux/store';
+import ContactForm from './components/pages/ContactForm';
 
 function App() {
   return (
@@ -22,9 +23,10 @@ function App() {
       
         <Routes>
           <Route path='/' element={<Home></Home>}></Route>
-          <Route path='/product' element={<ProductList></ProductList>}></Route>
+          <Route path='/product/' element={<ProductList></ProductList>}></Route>
           <Route path='/product/add' element={<AddProduct></AddProduct>}></Route>
           <Route path='/product/edit/:code' element={<EditProduct></EditProduct>}></Route>
+          <Route path='/contact/' element={<ContactForm></ContactForm>}></Route>
         </Routes>
         </div>
       </BrowserRouter>
